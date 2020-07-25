@@ -7,6 +7,16 @@ cd php5-fpm-nginx-debug
 docker-compose up
 ```
 
+go to browser.
+Access:
+```
+http://localhost:81
+```
+
+go to vscode
+hit F5
+
+
 That's it!
 
 
