@@ -8,3 +8,8 @@ docker-compose up
 
 That's it!
 
+
+### Reference
+This is a version inspired by this article.
+https://medium.com/@ahmetmertsevinc/how-to-xdebug-a-symfony-project-in-docker-that-contains-php-fpm-nginx-and-mysql-in-phpstorm-78c6574b05e0
+
