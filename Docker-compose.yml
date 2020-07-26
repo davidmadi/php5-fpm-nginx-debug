@@ -23,6 +23,7 @@ services:
     volumes:
       - ./app:/var/www/html/symfony:cached
       - ./dockerlive/logs:/var/log/nginx
+      - ./docker/nginx/sites-enabled:/etc/nginx/sites-enabled
 
   db:
     build: docker/database
