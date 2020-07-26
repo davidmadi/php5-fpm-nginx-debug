@@ -7,7 +7,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./app:/var/www/html/symfony:cached
+      - ./app:/var/www/html:cached
       - ./dockerlive/logs:/var/log
 
   nginx:
@@ -21,7 +21,7 @@ services:
       - php
       - db
     volumes:
-      - ./app:/var/www/html/symfony:cached
+      - ./app:/var/www/html:cached
       - ./dockerlive/logs:/var/log/nginx
       - ./docker/nginx/sites-enabled:/etc/nginx/sites-enabled
 

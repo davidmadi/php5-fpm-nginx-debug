@@ -12,7 +12,7 @@
       "port": 9001,
       "stopOnEntry" : true,
       "pathMappings": {
-        "/var/www/html/symfony/public": "${workspaceRoot}/app/public",
+        "/var/www/html": "${workspaceRoot}/app",
         "/app": "${workspaceRoot}/app"
       }
     }
