@@ -25,6 +25,9 @@ RUN echo "xdebug.remote_port = 9001" >> /etc/php5/fpm/conf.d/20-xdebug.ini
 RUN echo "xdebug.remote_handler = dbgp" >> /etc/php5/fpm/conf.d/20-xdebug.ini
 RUN echo "xdebug.remote_host = $(getent hosts docker.for.mac.localhost | awk '{ print $1 }')" >> /etc/php5/fpm/conf.d/20-xdebug.ini
 
+#windows
+#RUN echo "xdebug.remote_host = $(getent hosts host.docker.internal | awk '{ print $1 }')" >> /etc/php5/fpm/conf.d/20-xdebug.ini
+
 
 # The following runs FPM and removes all its extraneous log output on top of what your app outputs to stdout
 CMD /usr/sbin/php5-fpm -F -O 2>&1 | sed -u 's,.*: \"\(.*\)$,\1,'| sed -u 's,"$,,' 1>&1

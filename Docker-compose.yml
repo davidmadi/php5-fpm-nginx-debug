@@ -2,6 +2,8 @@ version: '3'
 services:
   php:
     build: docker/php
+    #windows
+    #network_mode: host
     expose:
       - '9000'
     depends_on:
